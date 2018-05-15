@@ -13,7 +13,7 @@ defined('_JEXEC') or die('Restricted access');
  *
 
  */
-class CongresosViewCongreso extends JViewLegacy
+class CongresoViewCongresos extends JViewLegacy
 {
 	/**
 	 * View form

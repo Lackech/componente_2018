@@ -26,8 +26,8 @@ class TableCongreso extends Table
 	 *
 	 * @since   1.0
 	 */
-	public function __construct(JDatabaseDriver $db)
+	public function __construct(&$db)
 	{
-		parent::__construct('#__congreso_items', 'item_id', $db);
+		parent::__construct('#__congreso', 'id', $db);
 	}
 }

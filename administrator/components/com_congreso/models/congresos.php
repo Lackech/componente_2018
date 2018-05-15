@@ -13,7 +13,7 @@ defined('_JEXEC') or die('Restricted access');
  *
  * @since  0.0.1
  */
-class CongresosModelCongreso extends JModelAdmin
+class CongresoModelCongresos extends JModelAdmin
 {
 	/**
 	 * Method to get a table object, load it if necessary.
@@ -26,7 +26,7 @@ class CongresosModelCongreso extends JModelAdmin
 	 *
 	 * @since   1.6
 	 */
-	public function getTable($type = 'Congreso', $prefix = 'CongresoTable', $config = array())
+	public function getTable($type = 'Congreso', $prefix = 'Table', $config = array())
 	{
 		return JTable::getInstance($type, $prefix, $config);
 	}
@@ -45,7 +45,7 @@ class CongresosModelCongreso extends JModelAdmin
 	{
 		// Get the form.
 		$form = $this->loadForm(
-			'com_congreso.congreso',
+			'com_congreso.congresos',
 			'congresos',
 			array(
 				'control' => 'jform',

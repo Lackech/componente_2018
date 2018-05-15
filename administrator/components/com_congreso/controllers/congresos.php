@@ -12,7 +12,7 @@ defined('_JEXEC') or die('Restricted access');
  *
 
  */
-class CongresosControllerCongreso extends JControllerForm
+class CongresoControllerCongresos extends JControllerForm
 {
 
 	protected $default_view = 'congresos';
