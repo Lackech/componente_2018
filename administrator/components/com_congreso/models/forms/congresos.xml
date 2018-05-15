@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+                name="title"
+                type="text"
+                label="Título"
+                description="Titulo del archivo"
+                size="40"
+                class="inputbox"
+                default=""
+        />
+
+
+
+        <field
+                name="description"
+                type="textarea"
+                label="Descripción"
+                description="Descripcion breve del archivo"
+                size="40"
+                class="inputbox"
+                default=""
+        />
+        <field
+                name="link"
+                type="URL"
+                label="Enlace"
+                description="Enlace donde conseguir el archivo"
+                size="40"
+                class="inputbox"
+                default=""
+        />
+
+
+    </fieldset>
