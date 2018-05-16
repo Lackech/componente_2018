@@ -38,6 +38,7 @@ class CongresoViewCongresos extends JViewLegacy
 
 
 
+
 		// Set the toolbar
 		$this->addToolBar();
 
@@ -71,7 +72,7 @@ class CongresoViewCongresos extends JViewLegacy
 		}
 
 		JToolBarHelper::title($title, 'congreso');
-		JToolBarHelper::save('congreso.save');
+		JToolBarHelper::save('congreso.save');//congresos
 		JToolBarHelper::cancel('congreso.cancel',$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}

@@ -45,8 +45,8 @@ class CongresoModelCongresos extends JModelAdmin
 	{
 		// Get the form.
 		$form = $this->loadForm(
-			'com_congreso.congreso',
-			'congreso',
+			'com_congreso.congresos',
+			'congresos',
 			array(
 				'control' => 'jform',
 				'load_data' => $loadData
