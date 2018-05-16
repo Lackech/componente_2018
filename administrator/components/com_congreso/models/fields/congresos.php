@@ -13,14 +13,14 @@ JFormHelper::loadFieldClass('list');
  * congreso Form Field class for the congreso component
  *
  */
-class JFormFieldCongreso extends JFormFieldList
+class JFormFieldcongreso extends JFormFieldList
 {
 	/**
 	 * The field type.
 	 *
 	 * @var         string
 	 */
-	protected $type = 'Congreso';
+	protected $type = 'congreso';
 
 	/**
 	 * Method to get a list of options for a list input.

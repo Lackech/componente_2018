@@ -18,8 +18,11 @@ defined('_JEXEC') or die;
  * @package  congreso
  * @since    1.0
  */
-class CongresoModelCongreso extends ListModel
+class CongresoModelCongreso extends JModelList
 {
+
+
+
 	/**
 	 * Method to build an SQL query to load the list data.
 	 *

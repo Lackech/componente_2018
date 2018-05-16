@@ -45,8 +45,8 @@ class CongresoModelCongresos extends JModelAdmin
 	{
 		// Get the form.
 		$form = $this->loadForm(
-			'com_congreso.congresos',
-			'congresos',
+			'com_congreso.congreso',
+			'congreso',
 			array(
 				'control' => 'jform',
 				'load_data' => $loadData
@@ -68,6 +68,7 @@ class CongresoModelCongresos extends JModelAdmin
 	 *
 	 * @since   1.6
 	 */
+
 	protected function loadFormData()
 	{
 		// Check the session for previously entered form data.
@@ -83,4 +84,5 @@ class CongresoModelCongresos extends JModelAdmin
 
 		return $data;
 	}
+
 }
