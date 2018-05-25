@@ -1,92 +1,79 @@
 <?php
 /**
- * @package    congreso
- *
- * @author     achacon <your@email.com>
- * @copyright  A copyright
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       http://your.url.com
+ * @package     Joomla.Administrator
+ * @subpackage  com_congreso
+
  */
 
-use Joomla\CMS\Factory;
-use Joomla\CMS\Language\Text;
-use Joomla\CMS\MVC\View\HtmlView;
-
-defined('_JEXEC') or die;
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
 
 /**
- * Congreso view.
+ * Congreso View
  *
- * @package  congreso
- * @since    1.0
+
  */
-class CongresoViewCongreso extends HtmlView
+class CongresoViewCongreso extends JViewLegacy
 {
 	/**
-	 * Congreso helper
+	 * View form
 	 *
-	 * @var    CongresoHelper
-	 * @since  1.0
+	 * @var   form
 	 */
-	protected $helper;
+	protected $form = null;
 
 	/**
-	 * The sidebar to show
-	 *
-	 * @var    string
-	 * @since  1.0
-	 */
-	protected $sidebar = '';
-
-	/**
-	 * Execute and display a template script.
+	 * Display the congresos view
 	 *
 	 * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
 	 *
-	 * @return  mixed  A string if successful, otherwise a JError object.
-	 *
-	 * @see     fetch()
-	 * @since   1.0
+	 * @return  void
 	 */
 	public function display($tpl = null)
 	{
+		// Get the Data
+		$this->form = $this->get('Form');
+		$this->item = $this->get('Item');
 
-		// Get data from the model
-		$this->items		= $this->get('Items');
-		$this->pagination	= $this->get('Pagination');
 
-		// Show the toolbar
-		$this->toolbar();
 
-		// Show the sidebar
-		$this->helper = new CongresoHelper;
-		$this->helper->addSubmenu('congreso');
-		$this->sidebar = JHtmlSidebar::render();
 
-		// Display it all
-		return parent::display($tpl);
+
+		// Set the toolbar
+		$this->addToolBar();
+
+		// Display the template
+		parent::display($tpl);
 	}
 
 	/**
-	 * Displays a toolbar for a specific page.
+	 * Add the page title and toolbar.
 	 *
-	 * @return  void.
+	 * @return  void
 	 *
-	 * @since   1.0
+	 * @since   1.6
 	 */
-	private function toolbar()
+	protected function addToolBar()
 	{
-		JToolBarHelper::title(Text::_('COM_CONGRESO'), '');
+		$input = JFactory::getApplication()->input;
 
-		JToolbarHelper::addNew('congresos.add');
-		JToolbarHelper::editList('congresos.edit');
-		JToolbarHelper::deleteList('', 'congreso.delete');
+		// Hide Joomla Administrator Main menu
+		$input->set('hidemainmenu', true);
 
+		$isNew = ($this->item->id == 0);
 
-		// Options button.
-		if (Factory::getUser()->authorise('core.admin', 'com_congreso'))
+		if ($isNew)
 		{
-			JToolBarHelper::preferences('com_congreso');
+			$title = JText::_('Crear nuevo archivo');
 		}
+		else
+		{
+			$title = JText::_('Editar archivo');
+		}
+
+		JToolBarHelper::title($title, 'congreso');
+		JToolBarHelper::save('congreso.save');//congreso
+		JToolBarHelper::cancel('congreso.cancel',$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
+		);
 	}
 }

@@ -3,11 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="cd7dacb5-91a6-409b-8446-c34177e16a19" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/congreso.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/controller.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/controller.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/helpers/congreso.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/helpers/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congresos.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congresos.xml" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congreso.xml" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/tables/congreso.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/tables/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/default.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/congreso.php" afterPath="$PROJECT_DIR$/components/com_congreso/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/controller.php" afterPath="$PROJECT_DIR$/components/com_congreso/controller.php" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/controllers/congreso.php" afterPath="$PROJECT_DIR$/components/com_congreso/controllers/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/layouts/congreso/page.php" afterPath="$PROJECT_DIR$/components/com_congreso/layouts/congreso/page.php" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/models/congreso.php" afterPath="$PROJECT_DIR$/components/com_congreso/models/congreso.php" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/views/congreso/tmpl/default.php" afterPath="$PROJECT_DIR$/components/com_congreso/views/congreso/tmpl/default.php" />
+      <change beforePath="$PROJECT_DIR$/components/com_congreso/views/congreso/view.html.php" afterPath="$PROJECT_DIR$/components/com_congreso/views/congreso/view.html.php" />
       <change beforePath="$PROJECT_DIR$/congreso.zip" afterPath="$PROJECT_DIR$/congreso.zip" />
+      <change beforePath="$PROJECT_DIR$/script.php" afterPath="$PROJECT_DIR$/script.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,28 +34,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="view.html.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -56,22 +52,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/controller.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congreso.xml" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congreso.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/sql/install/mysql/mysql.sql" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/sql/updates/mysql/1.0.sql" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congresos.xml" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congresos.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/tables/congreso.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/default.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso1.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/congreso1.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congreso.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/tables/congreso.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/helpers/congreso.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/congreso.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_congreso/controller.php" />
       </list>
     </option>
   </component>
@@ -114,7 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,7 +148,7 @@
               <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="com_congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="congreso" type="b2602c69:ProjectViewProjectNode" />
@@ -154,33 +156,13 @@
               <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="com_congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="congreso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="congresos" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="congreso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_congreso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="congresos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,7 +198,8 @@
       <updated>1525461120894</updated>
       <workItem from="1525461123077" duration="5606000" />
       <workItem from="1526421259739" duration="3532000" />
-      <workItem from="1526497010510" duration="8556000" />
+      <workItem from="1526497010510" duration="9073000" />
+      <workItem from="1527280150368" duration="4760000" />
     </task>
     <task id="LOCAL-00001" summary="Cambiar todo lo relacionado end edit">
       <created>1526505454984</created>
@@ -225,26 +208,33 @@
       <option name="project" value="LOCAL" />
       <updated>1526505454984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ya funciona New">
+      <created>1526507626097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526507626097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17694000" />
+    <option name="totallyTimeSpent" value="22971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14818764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -252,7 +242,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -264,14 +253,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cambiar todo lo relacionado end edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiar todo lo relacionado end edit" />
+    <MESSAGE value="Ya funciona New" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya funciona New" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="62" lean-forward="true" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
@@ -279,7 +285,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="74" column="40" lean-forward="false" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
@@ -287,7 +293,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
@@ -295,7 +301,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congresos.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congreso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="44" column="84" lean-forward="false" selection-start-line="44" selection-start-column="84" selection-end-line="44" selection-end-column="84" />
@@ -303,7 +309,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="82" column="48" lean-forward="false" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
@@ -311,7 +317,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
@@ -319,7 +325,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
@@ -327,7 +333,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
@@ -352,14 +358,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congreso.xml" />
     <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congreso.php" />
-    <entry file="file://$PROJECT_DIR$/congreso.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -397,18 +395,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/tables/congreso.php">
+    <entry file="file://$PROJECT_DIR$/congreso.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="890">
+          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/default.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="1207">
+          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congreso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congreso.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -424,31 +446,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/helpers/congreso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/fields/congresos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/forms/congresos.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congreso.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/tables/congreso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
@@ -456,66 +454,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/models/congresos.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/congreso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="-708">
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="80" column="41" lean-forward="true" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        <state relative-caret-position="839">
+          <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        <state relative-caret-position="431">
+          <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congresos/tmpl/edit.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/helpers/congreso.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="442">
+          <caret line="33" column="122" lean-forward="true" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/views/congreso/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/controllers/congreso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_congreso/congreso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
           <folding />
         </state>
       </provider>

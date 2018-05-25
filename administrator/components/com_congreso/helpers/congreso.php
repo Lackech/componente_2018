@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright
@@ -33,4 +33,8 @@ class CongresoHelper
 	{
 		JHtmlSidebar::addEntry(Text::_('COM_CONGRESO'), 'index.php?option=com_congreso&view=congreso', $vName == 'congreso');
 	}
+
+
+
+
 }

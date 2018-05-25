@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright
@@ -16,7 +16,7 @@ defined('_JEXEC') or die;
 </div>
 <div id="j-main-container" class="span10">
 
-    <form action="index.php?option=com_congreso&view=congreso" method="post" id="adminForm" name="adminForm">
+    <form action="index.php?option=com_congreso&view=congresos" method="post" id="adminForm" name="adminForm">
 
         <table class="table table-striped table-hover">
             <thead>
@@ -84,7 +84,7 @@ defined('_JEXEC') or die;
 
 
                         <td align="center">
-							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'congresos.', true, 'cb'); ?>
+							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'congreso.', true, 'cb'); ?>
                         </td>
                         <td align="center">
 							<?php echo $row->id; ?>

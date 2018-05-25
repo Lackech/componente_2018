@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright

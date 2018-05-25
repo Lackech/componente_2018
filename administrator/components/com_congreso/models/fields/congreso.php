@@ -10,17 +10,17 @@ defined('_JEXEC') or die('Restricted access');
 JFormHelper::loadFieldClass('list');
 
 /**
- * congreso Form Field class for the congreso component
+ * congresos Form Field class for the congresos component
  *
  */
-class JFormFieldcongreso extends JFormFieldList
+class JFormFieldCongreso extends JFormFieldList
 {
 	/**
 	 * The field type.
 	 *
 	 * @var         string
 	 */
-	protected $type = 'congreso';
+	protected $type = 'Congreso';
 
 	/**
 	 * Method to get a list of options for a list input.
