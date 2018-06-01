@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright
@@ -13,6 +13,6 @@ use Joomla\CMS\MVC\Controller\BaseController;
 
 defined('_JEXEC') or die;
 
-$controller = BaseController::getInstance('congreso');
+$controller = BaseController::getInstance('congresos');
 $controller->execute(Factory::getApplication()->input->get('task'));
 $controller->redirect();

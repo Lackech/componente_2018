@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright
@@ -24,6 +24,6 @@ if (!Factory::getUser()->authorise('core.manage', 'com_congreso'))
 require_once JPATH_COMPONENT_ADMINISTRATOR . '/helpers/congreso.php';
 
 // Execute the task
-$controller = BaseController::getInstance('congreso');
+$controller = BaseController::getInstance('Congreso');
 $controller->execute(Factory::getApplication()->input->get('task'));
 $controller->redirect();

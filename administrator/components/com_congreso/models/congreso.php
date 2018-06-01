@@ -1,40 +1,88 @@
 <?php
 /**
- * @package    congreso
- *
- * @author     achacon <your@email.com>
- * @copyright  A copyright
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       http://your.url.com
+ * @package     Joomla.Administrator
+ * @subpackage  com_congreso
+
  */
 
-use Joomla\CMS\MVC\Model\ListModel;
-
-defined('_JEXEC') or die;
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
 
 /**
- * Congreso
+ * Congreso Model
  *
- * @package  congreso
- * @since    1.0
+ * @since  0.0.1
  */
-class CongresoModelCongreso extends ListModel
+class CongresoModelCongreso extends JModelAdmin
 {
 	/**
-	 * Method to build an SQL query to load the list data.
+	 * Method to get a table object, load it if necessary.
 	 *
-	 * @return      string  An SQL query
+	 * @param   string  $type    The table name. Optional.
+	 * @param   string  $prefix  The class prefix. Optional.
+	 * @param   array   $config  Configuration array for model. Optional.
+	 *
+	 * @return  JTable  A JTable object
+	 *
+	 * @since   1.6
 	 */
-	protected function getListQuery()
+	public function getTable($type = 'Congreso', $prefix = 'Table', $config = array())
 	{
-		// Initialize variables.
-		$db    = JFactory::getDbo();
-		$query = $db->getQuery(true);
-
-		// Create the base select statement.
-		$query->select('*')
-			->from($db->quoteName('#__congreso'));
-
-		return $query;
+		return JTable::getInstance($type, $prefix, $config);
 	}
+
+	/**
+	 * Method to get the record form.
+	 *
+	 * @param   array    $data      Data for the form.
+	 * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not.
+	 *
+	 * @return  mixed    A JForm object on success, false on failure
+	 *
+	 * @since   1.6
+	 */
+	public function getForm($data = array(), $loadData = true)
+	{
+		// Get the form.
+		$form = $this->loadForm(
+			'com_congreso.congresos',
+			'congresos',
+			array(
+				'control' => 'jform',
+				'load_data' => $loadData
+			)
+		);
+
+		if (empty($form))
+		{
+			return false;
+		}
+
+		return $form;
+	}
+
+	/**
+	 * Method to get the data that should be injected in the form.
+	 *
+	 * @return  mixed  The data for the form.
+	 *
+	 * @since   1.6
+	 */
+
+	protected function loadFormData()
+	{
+		// Check the session for previously entered form data.
+		$data = JFactory::getApplication()->getUserState(
+			'com_congreso.edit.congresos.data',
+			array()
+		);
+
+		if (empty($data))
+		{
+			$data = $this->getItem();
+		}
+
+		return $data;
+	}
+
 }

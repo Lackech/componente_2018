@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright
@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
 /**
  * Congreso Controller.
  *
- * @package  congreso
+ * @package  congresos
  * @since    1.0
  */
 class CongresoController extends BaseController
@@ -26,5 +26,5 @@ class CongresoController extends BaseController
 	 *
 	 * @var string
 	 */
-	protected $default_view = 'congreso';
+	protected $default_view = 'congresos';
 }

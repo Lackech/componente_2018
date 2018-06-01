@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
-    <fieldset>
+    <fieldset name="formulario">
         <field
                 name="id"
                 type="hidden"
@@ -14,6 +14,18 @@
                 class="inputbox"
                 default=""
         />
+
+        <field
+                name="catid"
+                type="category"
+                extension="com_congreso"
+                class="inputbox"
+                default=""
+                label="Categoria"
+                description="Cate"
+                required="true"
+        />
+
 
 
 
@@ -38,3 +50,4 @@
 
 
     </fieldset>
+</form>

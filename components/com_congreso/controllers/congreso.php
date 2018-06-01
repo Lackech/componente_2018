@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    congreso
+ * @package    congresos
  *
  * @author     achacon <your@email.com>
  * @copyright  A copyright
@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
 /**
  * Congreso controller.
  *
- * @package  congreso
+ * @package  congresos
  * @since    1.0
  */
 class CongresoControllerCongreso extends BaseController
