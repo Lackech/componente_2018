@@ -31,7 +31,15 @@ class CongresoHelper
 	 */
 	public function addSubmenu($vName)
 	{
-		JHtmlSidebar::addEntry(Text::_('COM_CONGRESO'), 'index.php?option=com_congreso&view=congreso', $vName == 'congreso');
+		JHtmlSidebar::addEntry(Text::_('Enlaces'), 'index.php?option=com_congreso&view=congresos', $vName == 'congresos');
+
+		JHtmlSidebar::addEntry(Text::_('Categoria'), 'index.php?option=com_categories&view=categories&extension=com_congreso', $vName == 'categories');
+
+		if ($submenu == 'categories')
+		{
+			$document->setTitle(JText::_('COM_HELLOWORLD_ADMINISTRATION_CATEGORIES'));
+		}
+
 	}
 
 

@@ -15,6 +15,18 @@
                 default=""
         />
 
+        <field
+                name="catid"
+                type="category"
+                extension="com_congreso"
+                class="inputbox"
+                default=""
+                label="Categoria"
+                description="Cate"
+                required="true"
+        />
+
+
 
 
         <field

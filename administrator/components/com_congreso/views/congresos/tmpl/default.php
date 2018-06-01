@@ -26,14 +26,18 @@ defined('_JEXEC') or die;
 					<?php echo JHtml::_('grid.checkall'); ?>
                 </th>
 
-                <th width="22%">
+                <th width="25%">
 					<?php echo JText::_('Título') ;?>
                 </th>
 
-                <th width="22%">
+                <th width="20%">
+		            <?php echo JText::_('Categoria') ;?>
+                </th>
+
+                <th width="25%">
 					<?php echo JText::_('Descripción') ;?>
                 </th>
-                <th width="22%">
+                <th width="20%">
 					<?php echo JText::_('Enlace') ;?>
                 </th>
                 <th width="5%">
@@ -68,6 +72,12 @@ defined('_JEXEC') or die;
                         <td>
                             <a href="<?php echo $link; ?> " title= "<?php echo JText::_('Editar'); ?>">
 								<?php echo $row->title; ?>
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="<?php echo $link; ?> " title= "<?php echo JText::_('Editar'); ?>">
+			                    <?php echo $row->catid; ?>
                             </a>
                         </td>
 

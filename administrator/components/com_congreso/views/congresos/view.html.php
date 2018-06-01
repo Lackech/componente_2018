@@ -60,7 +60,8 @@ class CongresoViewCongresos extends HtmlView
 
 		// Show the sidebar
 		$this->helper = new CongresoHelper;
-		$this->helper->addSubmenu('congreso');
+		$this->helper->addSubmenu('congresos');
+
 		$this->sidebar = JHtmlSidebar::render();
 
 		// Display it all
