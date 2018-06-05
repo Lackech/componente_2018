@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS `#__congreso` (
 	`link` VARCHAR(25) NOT NULL,
 	`published` tinyint(4) NOT NULL DEFAULT '1',
 	PRIMARY KEY (`id`)
+
 )
 	ENGINE =MyISAM
 	AUTO_INCREMENT =0

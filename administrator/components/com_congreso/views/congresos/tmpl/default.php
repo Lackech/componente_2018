@@ -94,7 +94,7 @@ defined('_JEXEC') or die;
 
 
                         <td align="center">
-							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'congreso.', true, 'cb'); ?>
+							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'congresos.', true, 'cb'); ?>
                         </td>
                         <td align="center">
 							<?php echo $row->id; ?>
