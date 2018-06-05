@@ -45,8 +45,8 @@ class CongresoModelCongreso extends JModelAdmin
 	{
 		// Get the form.
 		$form = $this->loadForm(
-			'com_congreso.congresos',
-			'congresos',
+			'com_congreso.congreso',
+			'congreso',
 			array(
 				'control' => 'jform',
 				'load_data' => $loadData
@@ -73,7 +73,7 @@ class CongresoModelCongreso extends JModelAdmin
 	{
 		// Check the session for previously entered form data.
 		$data = JFactory::getApplication()->getUserState(
-			'com_congreso.edit.congresos.data',
+			'com_congreso.edit.congreso.data',
 			array()
 		);
 
