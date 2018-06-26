@@ -35,9 +35,16 @@ class CongresoHelper
 
 		JHtmlSidebar::addEntry(Text::_('Categoria'), 'index.php?option=com_categories&view=categories&extension=com_congreso', $vName == 'categories');
 
+		JHtmlSidebar::addEntry(Text::_('Autores'), 'index.php?option=com_congreso&view=authors', $vName == 'authors');
+
 		if ($submenu == 'categories')
 		{
 			$document->setTitle(JText::_('COM_HELLOWORLD_ADMINISTRATION_CATEGORIES'));
+		}
+
+		if ($submenu == 'authors')
+		{
+			$document->setTitle(JText::_('COM_HELLOWORLD_ADMINISTRATION_AUTHORS'));
 		}
 
 	}

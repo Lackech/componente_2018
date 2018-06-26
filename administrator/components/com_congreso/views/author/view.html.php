@@ -13,7 +13,7 @@ defined('_JEXEC') or die('Restricted access');
  *
 
  */
-class CongresoViewCongreso extends JViewLegacy
+class CongresoViewAuthor extends JViewLegacy
 {
 	/**
 	 * View form
@@ -21,7 +21,7 @@ class CongresoViewCongreso extends JViewLegacy
 	 * @var   form
 	 */
 	protected $form = null;
-
+	protected $item = null;
 	/**
 	 * Display the congresos view
 	 *
@@ -32,13 +32,16 @@ class CongresoViewCongreso extends JViewLegacy
 	public function display($tpl = null)
 	{
 		// Get the Data
-		$this->form = $this->get('Form');
 		$this->item = $this->get('Item');
+		$this->form = $this->get('Form');
+
+
 
 		if($this->item){
-			JLog::add('my error message: ' + $this->item->id, JLog::ERROR, 'jerror');
+			JLog::add(''+ $this->item->authorid , JLog::ERROR, 'jerror');
 
 		}
+
 
 
 
@@ -64,7 +67,7 @@ class CongresoViewCongreso extends JViewLegacy
 		// Hide Joomla Administrator Main menu
 		$input->set('hidemainmenu', true);
 
-		$isNew = ($this->item->id == 0);
+		$isNew = ($this->item->authorid == 0);
 
 		if ($isNew)
 		{
@@ -75,9 +78,9 @@ class CongresoViewCongreso extends JViewLegacy
 			$title = JText::_('Editar archivo');
 		}
 
-		JToolBarHelper::title($title, 'congreso');
-		JToolBarHelper::save('congreso.save');//congreso
-		JToolBarHelper::cancel('congreso.cancel',$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
+		JToolBarHelper::title($title, 'author');
+		JToolBarHelper::save('author.save');//congreso
+		JToolBarHelper::cancel('author.cancel',$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}
 }
