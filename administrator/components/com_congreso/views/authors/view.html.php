@@ -20,7 +20,7 @@ defined('_JEXEC') or die;
  * @package  congresos
  * @since    1.0
  */
-class CongresoViewCongresos extends HtmlView
+class CongresoViewAuthors extends HtmlView
 {
 	/**
 	 * Congreso helper
@@ -37,7 +37,7 @@ class CongresoViewCongresos extends HtmlView
 	 * @since  1.0
 	 */
 	protected $sidebar = '';
-	protected $submenu = '';
+
 	/**
 	 * Execute and display a template script.
 	 *
@@ -58,9 +58,9 @@ class CongresoViewCongresos extends HtmlView
 		// Show the toolbar
 		$this->toolbar();
 
-		// Show the sidebar
+		 //Show the sidebar
 		$this->helper = new CongresoHelper;
-		$this->helper->addSubmenu('congresos');
+		$this->helper->addSubmenu('authors');
 
 		$this->sidebar = JHtmlSidebar::render();
 
@@ -79,9 +79,9 @@ class CongresoViewCongresos extends HtmlView
 	{
 		JToolBarHelper::title(Text::_('COM_CONGRESO'), '');
 
-		JToolbarHelper::addNew('congreso.add');
-		JToolbarHelper::editList('congreso.edit');
-		JToolbarHelper::deleteList('', 'congresos.delete');
+		JToolbarHelper::addNew('author.add');
+		JToolbarHelper::editList('author.edit');
+		JToolbarHelper::deleteList('', 'authors.delete');
 
 
 		// Options button.
