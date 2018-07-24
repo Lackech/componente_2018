@@ -37,7 +37,7 @@ class CongresoViewCongresos extends HtmlView
 	 * @since  1.0
 	 */
 	protected $sidebar = '';
-
+	protected $submenu = '';
 	/**
 	 * Execute and display a template script.
 	 *

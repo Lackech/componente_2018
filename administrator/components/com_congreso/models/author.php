@@ -73,8 +73,8 @@ class CongresoModelAuthor extends JModelAdmin
 	{
 		// Check the session for previously entered form data.
 		$data = JFactory::getApplication()->getUserState(
-			'com_congreso.edit.author.data',array()	);
-
+			'com_congreso.edit.author.data',array());
+		var_dump($data);
 		if (empty($data))
 		{
 			$data = $this->getItem();
