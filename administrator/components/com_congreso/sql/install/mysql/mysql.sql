@@ -18,11 +18,11 @@ CREATE TABLE IF NOT EXISTS `#__congreso` (
 
 
 CREATE TABLE IF NOT EXISTS `#__congreso_author` (
-	`authorid`       INT(11)     NOT NULL AUTO_INCREMENT,
+	`id`       INT(11)     NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(25) NOT NULL,
 	`biography` text,
 	`published` tinyint(4) NOT NULL DEFAULT '1',
-	PRIMARY KEY (`authorid`)
+	PRIMARY KEY (`id`)
 )
 	ENGINE =MyISAM
 	AUTO_INCREMENT =0

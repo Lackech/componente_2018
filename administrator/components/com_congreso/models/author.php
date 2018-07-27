@@ -61,6 +61,9 @@ class CongresoModelAuthor extends JModelAdmin
 		return $form;
 	}
 
+
+
+
 	/**
 	 * Method to get the data that should be injected in the form.
 	 *
@@ -74,7 +77,7 @@ class CongresoModelAuthor extends JModelAdmin
 		// Check the session for previously entered form data.
 		$data = JFactory::getApplication()->getUserState(
 			'com_congreso.edit.author.data',array());
-		var_dump($data);
+		//var_dump($data);
 		if (empty($data))
 		{
 			$data = $this->getItem();
@@ -84,3 +87,4 @@ class CongresoModelAuthor extends JModelAdmin
 	}
 
 }
+

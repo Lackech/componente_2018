@@ -37,10 +37,7 @@ class CongresoViewAuthor extends JViewLegacy
 
 
 
-		if($this->item){
-			JLog::add(''+ $this->item->authorid , JLog::ERROR, 'jerror');
 
-		}
 
 
 

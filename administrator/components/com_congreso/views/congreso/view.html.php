@@ -35,10 +35,7 @@ class CongresoViewCongreso extends JViewLegacy
 		$this->form = $this->get('Form');
 		$this->item = $this->get('Item');
 
-		if($this->item){
-			JLog::add('my error message: ' + $this->item->id, JLog::ERROR, 'jerror');
 
-		}
 
 
 

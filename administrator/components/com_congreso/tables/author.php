@@ -28,6 +28,6 @@ class TableAuthor extends Table
 	 */
 	public function __construct(&$db)
 	{
-		parent::__construct('#__congreso_author', 'authorid', $db);
+		parent::__construct('#__congreso_author', 'id', $db);
 	}
 }

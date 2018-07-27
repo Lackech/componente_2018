@@ -31,7 +31,7 @@ class JFormFieldAuthor extends JFormFieldList
 	{
 		$db    = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('#__congreso_author.authorid,#__congreso_author.name,#__congreso_author.biography');
+		$query->select('#__congreso_author.id,#__congreso_author.name,#__congreso_author.biography');
 		$query->from('#__congreso_author');
 		// Retrieve only published items
 		$query->where('#__congreso_author.published = 1');
@@ -44,7 +44,7 @@ class JFormFieldAuthor extends JFormFieldList
 		{
 			foreach ($messages as $message)
 			{
-				$options[] = JHtml::_('select.option', $message->authorid, $message->name ,$message->biography);
+				$options[] = JHtml::_('select.option', $message->id, $message->name ,$message->biography);
 			}
 		}
 

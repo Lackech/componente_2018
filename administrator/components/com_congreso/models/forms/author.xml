@@ -2,7 +2,7 @@
 <form>
     <fieldset name="formulario_autor">
         <field
-                name="authorid"
+                name="id"
                 type="hidden"
         />
         <field
