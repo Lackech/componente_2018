@@ -31,9 +31,10 @@ class JFormFieldCongreso extends JFormFieldList
 	{
 		$db    = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('#__congreso.id as id,title,#__categories.title as category,#__congreso.catid,#__congreso.description,#__congreso.link');
+		$query->select('#__congreso.id as id,title,#__author.id as autid,#__congreso.catid,#__congreso.description,#__congreso.link');
 		$query->from('#__congreso');
 		$query->leftJoin('#__categories on #__congreso.catid=#__categories.id');
+		$query->leftJoin('#__author on #__author.id=#__congreso.autid');
 		// Retrieve only published items
 		$query->where('#__congreso.published = 1');
 		$db->setQuery((string) $query);
@@ -45,7 +46,7 @@ class JFormFieldCongreso extends JFormFieldList
 		{
 			foreach ($messages as $message)
 			{
-				$options[] = JHtml::_('select.option', $message->id, $message->title . ($message->catid ? ' (' . $message->category . ')' : ''),$message->description, $message->link);
+				$options[] = JHtml::_('select.option', $message->id, $message->title,$message->autid ,$message->catid,$message->description, $message->link);
 			}
 		}
 

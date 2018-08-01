@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
-    <fieldset name="formulario">
+    <fieldset name="formulario" addfieldpath="/administrator/components/com_congreso/models/fields" >
         <field
                 name="id"
                 type="hidden"
@@ -14,6 +14,10 @@
                 class="inputbox"
                 default=""
         />
+
+        <field name="Autor" type="AuthorList" label="Autor"
+               description="JFIELD_TITLE_DESC"
+               required="true" />
 
         <field
                 name="catid"

@@ -30,7 +30,11 @@ defined('_JEXEC') or die;
 					<?php echo JText::_('Título') ;?>
                 </th>
 
-                <th width="20%">
+                <th width="10%">
+		            <?php echo JText::_('Autor') ;?>
+                </th>
+
+                <th width="10%">
 		            <?php echo JText::_('Categoria') ;?>
                 </th>
 
@@ -72,6 +76,12 @@ defined('_JEXEC') or die;
                         <td>
                             <a href="<?php echo $link; ?> " title= "<?php echo JText::_('Editar'); ?>">
 								<?php echo $row->title; ?>
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="<?php echo $link; ?> " title= "<?php echo JText::_('Editar'); ?>">
+			                    <?php echo $row->autid; ?>
                             </a>
                         </td>
 

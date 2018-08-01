@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS `#__congreso_author`;
 CREATE TABLE IF NOT EXISTS `#__congreso` (
 	`id`       INT(11)     NOT NULL AUTO_INCREMENT,
 	`title` VARCHAR(25) NOT NULL,
+	`autid` INT(11)     NOT NULL DEFAULT '0',
 	`catid` INT(11) NOT NULL DEFAULT '0',
 	`description` VARCHAR(25) NOT NULL,
 	`link` VARCHAR(25) NOT NULL,

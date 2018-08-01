@@ -33,12 +33,10 @@ defined('_JEXEC') or die;
 				<th width="65%">
 					<?php echo JText::_('Descripción') ;?>
 				</th>
-				<th width="5%">
+				<th width="7%">
 					<?php echo JText::_('Publicado'); ?>
 				</th>
-				<th width="2%">
-					<?php echo JText::_('ID'); ?>
-				</th>
+
 			</tr>
 			</thead>
 			<tfoot>
@@ -79,9 +77,7 @@ defined('_JEXEC') or die;
 						<td align="center">
 							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'authors.', true, 'cb'); ?>
 						</td>
-						<td align="center">
-							<?php echo $row->authorid; ?>
-						</td>
+
 					</tr>
 				<?php endforeach; ?>
 			<?php endif; ?>
