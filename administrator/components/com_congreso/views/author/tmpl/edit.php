@@ -9,7 +9,7 @@
 defined('_JEXEC') or die('Restricted access');
 JHtml::_('behavior.formvalidation');
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_congreso&layout=edit&id=' . (int) $this->item->authorid); ?>"
+<form action="<?php echo JRoute::_('index.php?option=com_congreso&layout=edit&id=' . (int) $this->item->id); ?>"
 
       method="post" name="adminForm" id="adminForm" class="form-validate">
 	<div class="form-horizontal">

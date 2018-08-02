@@ -15,7 +15,7 @@
                 default=""
         />
 
-        <field name="Autor" type="AuthorList" label="Autor"
+        <field name="autid" type="AuthorList" label="Autor"
                description="JFIELD_TITLE_DESC"
                required="true" />
 
