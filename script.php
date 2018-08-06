@@ -38,10 +38,114 @@ class Com_CongresoInstallerScript
 	public function postflight($route, JAdapterInstance $adapter) {
 
 
+		// Only execute database changes on MySQL databases
+		$dbName = JFactory::getDbo()->name;
 
+		if (strpos($dbName, 'mysql') !== false)
+		{
+			// Add Missing Table Columns if needed
+			//$this->addColumnsIfNeeded();
+
+			// Drop the Table Columns if needed
+			//$this->dropColumnsIfNeeded();
+		}
+
+		// Insert missing UCM Records if needed
+		$this->insertMissingUcmRecords();
 
 
 	}
+
+
+	/**
+	 * Method to insert missing records for the UCM tables
+	 *
+	 * @return  void
+	 *
+	 * @since   3.4.1
+	 */
+	private function insertMissingUcmRecords()
+	{
+		// Insert the rows in the #__content_types table if they don't exist already
+		$db = JFactory::getDbo();
+
+		// Get the type ID for a Weblink
+		$query = $db->getQuery(true);
+		$query->select($db->quoteName('type_id'))
+			->from($db->quoteName('#__content_types'))
+			->where($db->quoteName('type_alias') . ' = ' . $db->quote('com_congreso.congreso'));
+		$db->setQuery($query);
+
+		$congresoTypeId = $db->loadResult();
+
+		// Get the type ID for a Congreso Category
+		$query->clear('where');
+		$query->where($db->quoteName('type_alias') . ' = ' . $db->quote('com_congreso.category'));
+		$db->setQuery($query);
+
+		$categoryTypeId = $db->loadResult();
+
+		// Set the table columns to insert table to
+		$columnsArray = array(
+			$db->quoteName('type_title'),
+			$db->quoteName('type_alias'),
+			$db->quoteName('table'),
+			$db->quoteName('rules'),
+			$db->quoteName('field_mappings'),
+			$db->quoteName('router'),
+			$db->quoteName('content_history_options'),
+		);
+
+		// If we have no type id for com_congreso.congreso insert it
+		if (!$congresoTypeId)
+		{
+			// Insert the data.
+			$query->clear();
+			$query->insert($db->quoteName('#__content_types'));
+			$query->columns($columnsArray);
+			$query->values(
+				$db->quote('Congreso') . ', '
+				. $db->quote('com_congreso.congreso') . ', '
+				. $db->quote('{"special":{"dbtable":"#__congreso","key":"id","type":"Congreso","prefix":"Table","config":"array()"},"common":{"dbtable":"#__ucm_content","key":"ucm_id","type":"Corecontent","prefix":"JTable","config":"array()"}}') . ', '
+				. $db->quote('') . ', '
+				. $db->quote('{"common":{"core_content_item_id":"id","core_title":"title","core_state":"null","core_alias":"null","core_created_time":"null","core_modified_time":"null","core_body":"description", "core_hits":"null","core_publish_up":"null","core_publish_down":"null","core_access":"null", "core_params":"null", "core_featured":"null", "core_metadata":"null", "core_language":"null", "core_images":"null", "core_urls":"link", "core_version":"null", "core_ordering":"null", "core_metakey":"null", "core_metadesc":"null", "core_catid":"catid", "core_xreference":"null", "asset_id":"null"}, "special":{}}') . ', '
+				. $db->quote('CongresoHelperRoute::getCongresoRoute') . ', '
+				. $db->quote('{"formFile":"administrator\\/components\\/com_congreso\\/models\\/forms\\/congreso.xml", "hideFields":[], "ignoreChanges":[], "convertToInt":[], "displayLookup":[{"sourceColumn":"catid","targetTable":"#__categories","targetColumn":"id","displayColumn":"title"} ]}')
+			);
+
+			$db->setQuery($query);
+			$db->execute();
+		}
+
+		// If we have no type id for com_congreso.category insert it
+		if (!$categoryTypeId)
+		{
+			// Insert the data.
+			$query->clear();
+			$query->insert($db->quoteName('#__content_types'));
+			$query->columns($columnsArray);
+			$query->values(
+				$db->quote('Congreso Category') . ', '
+				. $db->quote('com_congreso.category') . ', '
+				. $db->quote('{"special":{"dbtable":"#__categories","key":"id","type":"Category","prefix":"JTable","config":"array()"},"common":{"dbtable":"#__ucm_content","key":"ucm_id","type":"Corecontent","prefix":"JTable","config":"array()"}}') . ', '
+				. $db->quote('') . ', '
+				. $db->quote('{"common":{"core_content_item_id":"id","core_title":"title","core_state":"published","core_alias":"alias","core_created_time":"created_time","core_modified_time":"modified_time","core_body":"description", "core_hits":"hits","core_publish_up":"null","core_publish_down":"null","core_access":"access", "core_params":"params", "core_featured":"null", "core_metadata":"metadata", "core_language":"language", "core_images":"null", "core_urls":"null", "core_version":"version", "core_ordering":"null", "core_metakey":"metakey", "core_metadesc":"metadesc", "core_catid":"parent_id", "core_xreference":"null", "asset_id":"asset_id"}, "special":{"parent_id":"parent_id","lft":"lft","rgt":"rgt","level":"level","path":"path","extension":"extension","note":"note"}}') . ', '
+				. $db->quote('CongresoHelperRoute::getCategoryRoute') . ', '
+				. $db->quote('{"formFile":"administrator\\/components\\/com_categories\\/models\\/forms\\/category.xml", "hideFields":["asset_id","checked_out","checked_out_time","version","lft","rgt","level","path","extension"], "ignoreChanges":["modified_user_id", "modified_time", "checked_out", "checked_out_time", "version", "hits", "path"],"convertToInt":["publish_up", "publish_down"], "displayLookup":[{"sourceColumn":"created_user_id","targetTable":"#__users","targetColumn":"id","displayColumn":"name"},{"sourceColumn":"access","targetTable":"#__viewlevels","targetColumn":"id","displayColumn":"title"},{"sourceColumn":"modified_user_id","targetTable":"#__users","targetColumn":"id","displayColumn":"name"},{"sourceColumn":"parent_id","targetTable":"#__categories","targetColumn":"id","displayColumn":"title"}]}')
+			);
+
+			$db->setQuery($query);
+			$db->execute();
+		}
+	}
+
+
+
+
+
+
+
+
 
 	/**
 	 * Called on installation
