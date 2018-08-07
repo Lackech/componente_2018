@@ -16,7 +16,8 @@
         />
 
         <field name="autid" type="AuthorList" label="Autor"
-               description="JFIELD_TITLE_DESC"
+               multiple="true"
+               description="EMPTY"
                required="true" />
 
         <field
