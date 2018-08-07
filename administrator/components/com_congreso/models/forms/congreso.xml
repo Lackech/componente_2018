@@ -16,7 +16,6 @@
         />
 
         <field name="autid" type="AuthorList" label="Autor"
-               multiple="true"
                description="EMPTY"
                required="true" />
 
