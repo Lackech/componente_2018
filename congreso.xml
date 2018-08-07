@@ -55,6 +55,7 @@
 			<!--<menu link="com_categories&amp;extension=com_congreso">Categorias</menu>-->
 			<menu link="option=com_categories&amp;view=categories&amp;extension=com_congreso">Categorias</menu>
 
+			<menu view="authors" link="option=com_congreso&amp;view=authors">Autores</menu>
 
 		</submenu>
 
