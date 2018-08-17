@@ -86,5 +86,10 @@ class CongresoModelAuthor extends JModelAdmin
 		return $data;
 	}
 
+
+
+
+
+
 }
 

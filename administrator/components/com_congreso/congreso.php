@@ -20,6 +20,16 @@ if (!Factory::getUser()->authorise('core.manage', 'com_congreso'))
 	throw new InvalidArgumentException(Text::_('JERROR_ALERTNOAUTHOR'), 404);
 }
 
+if (! class_exists('congresoLoader')) {
+	require_once( JPATH_ADMINISTRATOR.'/components/com_congreso/libraries/loader.php');
+}
+
+require_once( JPATH_COMPONENT.'/controller.php' );
+jimport( 'joomla.filesystem.folder' );
+jimport( 'joomla.filesystem.file' );
+congresoimport('congreso.author.author');
+
+
 // Require the helper
 require_once JPATH_COMPONENT_ADMINISTRATOR . '/helpers/congreso.php';
 
