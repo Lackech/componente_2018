@@ -48,10 +48,7 @@ class congresoAuthor
 				.' FROM #__congreso_author_ref'
 				. ' WHERE linkid = '. (int)$linkId;
 			$db->setQuery($query);
-			if (!$db->query()) {
-				echo PhocaDownloadException::renderErrorInfo('Database Error - Deleting FileId Tags');
-				return false;
-			}
+
 
 			if (!empty($authorsArray)) {
 
@@ -89,10 +86,7 @@ class congresoAuthor
 		//. ' ORDER BY a.id';
 		$db->setQuery($query);
 
-		if (!$db->query()) {
-			echo PhocaDownloadException::renderErrorInfo('Database Error - Getting All Tags');
-			return false;
-		}
+
 
 		$authors = $db->loadObjectList();
 

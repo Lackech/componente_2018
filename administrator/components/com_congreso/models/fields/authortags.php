@@ -20,7 +20,7 @@ class JFormFieldAuthorTags extends JFormField
 
 		$activeAuthors = array();
 		if ((int)$id > 0) {
-			$activeAuthors	= congresoAuthor::getTags($id, 1);
+			$activeAuthors	= congresoAuthor::getAuthors($id, 1);
 		}
 
 

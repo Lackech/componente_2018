@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS `#__contentitem_tag_map`;
 DROP TABLE IF EXISTS `#__congreso`;
 DROP TABLE IF EXISTS `#__congreso_author`;
 DROP TABLE IF EXISTS `#__congreso_author_ref`;
