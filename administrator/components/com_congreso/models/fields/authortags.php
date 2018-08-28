@@ -24,6 +24,8 @@ class JFormFieldAuthorTags extends JFormField
 		}
 
 
+
+
 		return congresoAuthor::getAllAuthorsSelectBox($this->name, $this->id, $activeAuthors, NULL, 'a.id' );
 
 
