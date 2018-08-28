@@ -55,23 +55,6 @@ class CongresoModelCongreso extends JModelAdmin
 			$item->metadata = $registry->toArray();
 		}
 
-		// Load associated contact items
-		$assoc = JLanguageAssociations::isEnabled();
-
-		if ($assoc)
-		{
-			$item->associations = array();
-
-			if ($item->id != null)
-			{
-				$associations = JLanguageAssociations::getAssociations('com_congreso', '#__congreso', 'com_congreso.congreso', $item->id);
-
-				foreach ($associations as $tag => $association)
-				{
-					$item->associations[$tag] = $association->id;
-				}
-			}
-		}
 
 		// Load item tags
 		if (!empty($item->id))
@@ -82,6 +65,103 @@ class CongresoModelCongreso extends JModelAdmin
 
 		return $item;
 	}
+
+
+	public function save($data)
+	{
+		$dispatcher = \JEventDispatcher::getInstance();
+		$table      = $this->getTable();
+		$context    = $this->option . '.' . $this->name;
+
+		if (!empty($data['tags']) && $data['tags'][0] != '')
+		{
+			$table->newTags = $data['tags'];
+		}
+
+		$key = $table->getKeyName();
+		$pk = (!empty($data[$key])) ? $data[$key] : (int) $this->getState($this->getName() . '.id');
+		$isNew = true;
+
+		// Include the plugins for the save events.
+		\JPluginHelper::importPlugin($this->events_map['save']);
+
+		// Allow an exception to be thrown.
+		try
+		{
+			// Load the row if saving an existing record.
+			if ($pk > 0)
+			{
+				$table->load($pk);
+				$isNew = false;
+			}
+
+			// Bind the data.
+			if (!$table->bind($data))
+			{
+				$this->setError($table->getError());
+
+				return false;
+			}
+
+			// Prepare the row for saving
+			$this->prepareTable($table);
+
+			// Check the data.
+			if (!$table->check())
+			{
+				$this->setError($table->getError());
+
+				return false;
+			}
+
+			// Trigger the before save event.
+			$result = $dispatcher->trigger($this->event_before_save, array($context, $table, $isNew, $data));
+
+
+
+			// Store the data.
+			if (!$table->store())
+			{
+				$this->setError($table->getError());
+
+				return false;
+			}
+
+			// Store to ref table
+			if (!isset($data['autid'])) {
+				$data['autid'] = array();
+			}
+			if ((int)$table->id > 0) {
+				congresoAuthor::storeAuthors($data['autid'], (int)$table->id);
+			}
+
+
+			// Clean the cache.
+			$this->cleanCache();
+
+			// Trigger the after save event.
+			$dispatcher->trigger($this->event_after_save, array($context, $table, $isNew, $data));
+		}
+		catch (\Exception $e)
+		{
+			$this->setError($e->getMessage());
+
+			return false;
+		}
+
+		if (isset($table->$key))
+		{
+			$this->setState($this->getName() . '.id', $table->$key);
+		}
+
+		$this->setState($this->getName() . '.new', $isNew);
+
+
+
+		return true;
+	}
+
+
 
 
 
