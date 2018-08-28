@@ -16,4 +16,10 @@ class CongresoControllerCongreso extends JControllerForm
 {
 
 	protected $default_view = 'congreso';
+
+
+
+
+
+
 }

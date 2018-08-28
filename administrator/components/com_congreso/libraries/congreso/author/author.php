@@ -66,10 +66,7 @@ class congresoAuthor
 						.' VALUES '.(string)$valuesString;
 
 					$db->setQuery($query);
-					if (!$db->query()) {
-						echo PhocaDownloadException::renderErrorInfo('Database Error - Insert FileId Tags');
-						return false;
-					}
+
 
 				}
 			}
@@ -90,8 +87,8 @@ class congresoAuthor
 
 		$authors = $db->loadObjectList();
 
-		$authorsO = JHTML::_('select.genericlist', $authors, $name, 'class="inputbox" size="4" multiple="multiple"'. $javascript, 'value', 'text', $activeArray, $id);
+		return JHtml::_('select.genericlist', $authors, $name, 'class="inputbox" size="4" multiple="multiple"'. $javascript, 'value', 'text', $activeArray, $id);
 
-		return $authorsO;
+
 	}
 }

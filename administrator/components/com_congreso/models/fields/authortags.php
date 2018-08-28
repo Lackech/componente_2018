@@ -30,4 +30,8 @@ class JFormFieldAuthorTags extends JFormField
 
 
 	}
+
+
+
+
 }

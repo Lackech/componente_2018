@@ -169,6 +169,9 @@ class CongresoModelCongreso extends JModelAdmin
 
 
 
+
+
+
 	/**
 	 * Method to get the record form.
 	 *
