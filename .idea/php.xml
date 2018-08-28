@@ -3,6 +3,7 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/../Ciencia Tecnologia y Genero" />
+      <path value="$PROJECT_DIR$/../../www/first" />
     </include_path>
   </component>
 </project>
